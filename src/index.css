@@ -15,3 +15,24 @@ body {
   background-color: rgb(124 58 237 / 0.4);
   color: white;
 }
+.color-bends-layer {
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 8%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 8%);
+}
+
+.color-bends-layer canvas {
+  filter: saturate(1.25) brightness(1.2);
+}
+
+.mask-fade {
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    black 45%,
+    transparent 85%
+  );
+  mask-image: radial-gradient(
+    ellipse at center,
+    black 45%,
+    transparent 85%
+  );
+}

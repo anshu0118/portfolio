@@ -6,7 +6,9 @@ function SectionHeading({ label, title, description }) {
       </p>
       <h2 className="text-3xl font-bold text-white sm:text-4xl">{title}</h2>
       {description && (
-        <p className="mx-auto mt-4 max-w-2xl text-gray-400">{description}</p>
+        <p className="mx-auto mt-4 max-w-2xl text-gray-300 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
+          {description}
+        </p>
       )}
     </div>
   );

@@ -49,7 +49,7 @@ function Contact() {
         />
 
         <div className="mx-auto grid max-w-4xl gap-12 md:grid-cols-2">
-          <div className="space-y-6">
+          <div className="space-y-6 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
             <div>
               <h3 className="mb-1 font-semibold text-white">Email</h3>
               <a
