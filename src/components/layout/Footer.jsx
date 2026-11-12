@@ -1,8 +1,7 @@
 const socialLinks = [
-  { label: 'GitHub', href: 'https://github.com' },
-  { label: 'LinkedIn', href: 'https://linkedin.com' },
-  { label: 'Twitter', href: 'https://twitter.com' },
-  { label: 'Email', href: 'mailto:anshuman@example.com' },
+  { label: 'GitHub', href: 'https://github.com/anshu0118' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/anshuman-kar-bb8208279/' },
+  { label: 'Email', href: 'mailto:anshumankar575@gmail.com' },
 ];
 
 function Footer() {
@@ -10,7 +9,7 @@ function Footer() {
     <footer className="border-t border-white/10 bg-black/30 py-10">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-6 sm:flex-row">
         <p className="text-sm text-gray-500">
-          © {new Date().getFullYear()} Anshuman Kar. All rights reserved.
+          Built by Anshuman Kar
         </p>
 
         <div className="flex gap-6">
@@ -18,8 +17,8 @@ function Footer() {
             <a
               key={link.label}
               href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
+              target={link.href.startsWith('mailto:') ? undefined : '_blank'}
+              rel={link.href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
               className="text-sm text-gray-400 transition hover:text-violet-400"
             >
               {link.label}
